@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from'./App.css';
+import React from "react";
+import Welcome from './Components/welcome';
+import Next from './Components/Next';
+import Finish from './Components/Finish';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Welcome name= "Verónica alexandra Payés Carballo" ></Welcome>
+      <Next carrera="ingenieria en Ciencias de la Computación" ></Next>
+      <Finish info="c#, js, php"></Finish>
     </div>
   );
 }
